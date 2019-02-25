@@ -5,9 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HEHE!</title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 <body>
-    <span>Kamu tauga?</span>
-    <input type="text">
+    <form action="#" id='form1'>
+            <span>Silahkan masukan nama pertama anda</span>
+            <input type="text" id='in1'>
+            <button id='btn1'>ok</button>
+    </form>
+
+    <form action="#" id='form2' style="display: none;">
+            <span>Apakah nafis sudah punya pacar?</span>
+            <button id='btn2-1'>sudah</button>
+            <button id='btn2-2'>belum</button>
+    </form>
+
+    <form action="#" id='form3' style="display: none;">
+            <span>Siapa nama pacar nafis?</span>
+            <input type="text" id='in3'>
+            <button id='btn3'>ok</button>
+    </form>
+
+    <form action="#" id='form4' style="display: none;">
+            <span>Kamu tifa ya?</span>
+            <button id='btn4-1'>Y</button>
+            <button id='btn4-2'>G</button>
+    </form>
+
+    <form action="#" id='form5' style="display: none;">
+            <span>TIfa suka nafis ga?</span>
+            <button id='btn5-1'>Y</button>
+            <button id='btn5-2'>G</button>
+    </form>
+
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                if ($('#in1').val().toLowerCase() === 'putri') {
+                    alert('HAI CHIVA =)))))');
+
+                    $('#form1').css('display', 'none');
+                    $('#form2').css('display', 'block');
+
+                    $('#btn2-1').click(function() {
+                        alert('yee benar!');
+
+                        $('#form2').css('display', 'none');
+                        $('#form3').css('display', 'block');
+
+                        $('#btn3').click(function() {
+                            if ($('#in3').val().toLowerCase() === 'putri') {
+                                alert('KOK TAU SIH??');
+
+                                $('#form3').css('display', 'none');
+                                $('#form4').css('display', 'block');
+
+                                $('#btn4-1').click(function() {
+                                    alert('hai tifaa cantiK <3');
+
+                                    $('#form4').css('display', 'none');
+                                    $('#form5').css('display', 'block');
+
+                                    $('#btn5-1').click(function() {
+                                        alert('cie cie cie cie cie cie cie');
+                                    });
+
+                                    $('#btn5-2').click(function() {
+                                        alert('bohong :(');
+                                    });
+                                });
+
+                                $('#btn4-2').click(function() {
+                                    alert('tadi pas awal masukin nya nama tifa?');
+                                });
+                            }else {
+                                alert('sotoy anda');
+                            }
+                        });
+                    });
+
+                    $('#btn2-2').click(function() {
+                        alert('PACAR NAFIS TIFA WOY!');
+                    });
+
+                }else {
+                    alert('ANDA DILARANG MASUKKK!!!!');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
