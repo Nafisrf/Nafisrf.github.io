@@ -1,0 +1,2 @@
+"use strict";$(document).ready(function(){var navToggleBtn=$(".nav-toggle--outer"),navLinksOuter=$(".links--outer");navToggleBtn.click(function(){navLinksOuter.slideToggle()});});
+//# sourceMappingURL=app.js.map
