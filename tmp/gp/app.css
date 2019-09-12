@@ -542,7 +542,7 @@ nav .nav-wrapper .flex .nav-toggle--outer .nav-toggle {
 nav .nav-wrapper .flex .nav-toggle--outer .nav-toggle .toggle-span {
     display: block;
     height: inherit;
-    background-image: url("/img/navbar-toggle.svg");
+    background-image: url("tmp/gp/navbar-toggle.svg");
     background-repeat: no-repeat;
     background-position: center
 }
@@ -696,14 +696,14 @@ body#index-page section#first .contact-bar .email:before {
 }
 
 body#index-page section#first .contact-bar .phone:before {
-    background-image: url("/img/call-answer.svg");
+    background-image: url("tmp/gp/call-answer.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center
 }
 
 body#index-page section#first .contact-bar .email:before {
-    background-image: url("/img/close-envelope.svg");
+    background-image: url("tmp/gp/close-envelope.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center
@@ -877,13 +877,13 @@ body#index-page section#pelayanan .flex a div span {
 }
 
 body#index-page section#pelayanan .flex a.layanan-talents-mapping div {
-    background-image: url("/img/skills.jpg");
+    background-image: url("tmp/gp/skills.jpg");
     background-repeat: no-repeat;
     background-size: cover
 }
 
 body#index-page section#pelayanan .flex a.layanan-fingerprint-analysis div {
-    background-image: url("/img/fingerprint.jpg");
+    background-image: url("tmp/gp/fingerprint.jpg");
     background-repeat: no-repeat;
     background-size: cover
 }
