@@ -902,12 +902,14 @@ body#index-page section#credits h4 {
 body#index-page section#credits .flex {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center
+    justify-content: center;
+    min-height: 30px
 }
 
 @media (max-width: 860px) {
     body#index-page section#credits .flex {
         overflow-x: auto;
+        overflow-y: hidden;
         -webkit-box-pack: initial;
         -ms-flex-pack: initial;
         justify-content: initial
