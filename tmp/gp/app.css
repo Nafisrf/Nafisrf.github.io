@@ -894,6 +894,11 @@ body#index-page section#credits {
     color: #fff
 }
 
+body#index-page section#credits h4 {
+    font-size: 1rem;
+    font-weight: normal
+}
+
 body#index-page section#credits .flex {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
@@ -910,12 +915,13 @@ body#index-page section#credits .flex {
 }
 
 body#index-page section#credits div {
+    font-size: .68rem;
     text-align: center;
     margin: 0 2em
 }
 
 body#index-page section#credits div img {
-    height: 50px;
+    height: 25px;
     -webkit-filter: brightness(0) invert(1);
     filter: brightness(0) invert(1)
 }
