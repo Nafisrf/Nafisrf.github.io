@@ -4,21 +4,196 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Nafis R Fadhlurrohman</title>
-    <link rel="stylesheet" href="index.css">
+    <title>Nafisrf</title>
+    <link rel="stylesheet" href="sass/main.css">
 </head>
-<body>
-<h1>Under Construction</h1>
-    <div class='container'>
-        <div class='tear'></div>
-        <div class='tear2'></div>
-        <div class='face'>
-            <div class='eyebrow'>︶</div>
-            <div class='eyebrow'>︶</div>
-            <div class='eye'></div>
-            <div class='eye'></div>
-            <div class='mouth'></div>
-        </div>
+<body data-spy="scroll" data-target="header#top">
+    
+    <header id="top">
+        <nav class="items">
+            <div class="nav-toggle">
+                <span></span>
+            </div>
+
+            <ul>
+                <li>
+                    <a href="#about">Home</a>
+                    <a href="#skill">Skill</a>
+                    <a href="#work">Work</a>
+                    <a href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header> 
+
+    <div class="container home">
+
+        <section id="about">
+            <video autoplay muted loop id="background-video">
+                <source src="video/earth_rotate.mp4" type="video/mp4">
+            </video>
+
+            <div class="content">
+                <div class="my-desc">
+                    <h1>Nafis Fadhlurrohman</h1>
+                    <p>FRONT-END & BACK-END DEVELOPER <br> UX & UI DESIGNER</p>
+
+                    <a href="#contact" class="contact-btn">CONTACT</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="skill" class="white-bg">
+            <h2 class="title">
+            SKILL</h2>
+            <div class="content wrapper">
+
+                <div class="vertical-center">
+                    <div class="flex">
+                        <div class="left-list">
+                            <h4>BACK-END</h4>
+
+                            <ul>
+                                <li>PHP</li>
+                                <li>MYSQL</li>
+                                <li>NODE</li>
+                            </ul>
+                        </div>
+
+                        <div class="right-list">
+                            <h4>FRONT-END</h4>
+
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>JAVASCRIPT</li>
+                                <li>SASS</li>
+                                <li>GULP</li>
+                                <li>P5</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="sketch-skill">
+            </div>
+        </section>
+
+        <section id="work" class="white-bg section-work">
+            <h2 class="title">WORK</h2>
+            
+            <div class="content wrapper">
+                <div class="work-outer">
+                    <div class="work-wrapper">
+                        <div class="work-group">
+                            <div class="center">
+                                <article class="article-left">
+                                    <a href="#" class="link">
+                                        <h3 class="work-title">1Artic Silence</h3>
+                                        <img src="img/white-brain.jpg" alt="">
+                                        <div class="cover-img-text">
+                                            <span>14 November 2002</span>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="article-right">
+                                    <a href="#" class="link">
+                                        <h3 class="work-title">1Inside The Story</h3>
+                                        <img src="img/work-2.jpg" alt="">
+                                        <div class="cover-img-text">
+                                            <span>14 November 2002</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="work-group">
+                            <div class="center">
+                                <article class="article-left">
+                                    <a href="#" class="link">
+                                        <h3 class="work-title">2dadad dada</h3>
+                                        <img src="img/particles.jpg" alt="">
+                                        <div class="cover-img-text">
+                                            <span>14 November 2002</span>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="article-right">
+                                    <a href="#" class="link">
+                                        <h3 class="work-title">2Igshe gagag</h3>
+                                        <img src="img/person.jpg" alt="">
+                                        <div class="cover-img-text">
+                                            <span>14 November 2002</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+
+                        <div class="work-group">
+                            <div class="center">
+                                <article class="article-left">
+                                    <a href="#" class="link">
+                                        <h3 class="work-title">3Artic Silence</h3>
+                                        <img src="img/work-1.jpg" alt="">
+                                        <div class="cover-img-text">
+                                            <span>14 November 2002</span>
+                                        </div>
+                                    </a>
+                                </article>
+                                <article class="article-right">
+                                    <a href="#" class="link">
+                                        <h3 class="work-title">3Inside The Story</h3>
+                                        <img src="img/work-2.jpg" alt="">
+                                        <div class="cover-img-text">
+                                            <span>14 November 2002</span>
+                                        </div>
+                                    </a>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="work-paginator">
+                    
+                        <span class="icon-arrow-left to-left"></span>
+                    
+                        <ul class="item"></ul>
+                    
+                        <span class="icon-arrow-right"></span>
+                    </div>
+            </div>
+        </section>
+        <section id="contact" class="section-contact">
+            
+            <div class="content wrapper">
+            <h2 class="title">CONTACT</h2>
+
+                <div class="flex">
+                    <div class="row">
+                        <a href="mailto:contact@nafisrf.com" class="label-email">EMAIL</a>
+                        
+                        <div class="email">
+                            <a href="mailto:contact@nafisrf.com" id="email">CONTACT@NAFISRF.COM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
     </div>
+
+    <footer>
+        <p>&copy; 2018 - Nafisrf.com. All rights reserved.</p>
+    </footer>
+
+    <script src="js/vendors.js"></script>
+    <script src="js/app.js"></script>
+        
 </body>
 </html>
