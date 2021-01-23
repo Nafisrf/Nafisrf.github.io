@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Motivation Drives 2</title>
+    <link rel="stylesheet" type="text/css"
+        href="http://s1.tsfpserver.com/src/report/exclusive-report/exclusive-theme.css">
+    <link rel="stylesheet" href="http://s1.tsfpserver.com/src/report/exclusive-report/working-enrichment1.css">
+    <script src="http://s1.tsfpserver.com/src/report/exclusive-report/jquery.js"></script>
+    <script src="http://s1.tsfpserver.com/src/report/exclusive-report/Chart.min.js"></script>
+
+</head>
+
+<body>
+    <div class="logo-ts">
+        <img src="http://s1.tsfpserver.com/src/report/exclusive-report/images/ts-logo.png">
+    </div>
+
+    <div id="title-page"><span>Working<br>Enrichment</span></div>
+
+
+    <img src="http://s1.tsfpserver.com/src/report/exclusive-report/images/working-enrichment1-bg.svg"
+        style="z-index:  -1;">
+
+    <canvas id="pie_chart" width="255" height="255"></canvas>
+
+    <div class="working-orientation__check" id="working_orientation_check0"></div>
+    <div class="working-orientation__check" id="working_orientation_check1"></div>
+    <div class="working-orientation__check" id="working_orientation_check2"></div>
+    <div class="working-orientation__check" id="working_orientation_check3"></div>
+
+    <div class="footer"><input type="text" class="footer-input" value="//tag_footer"></div>
+
+    <script>
+    //   var data = [{
+    //         value: //tag_investor,
+    //         color: "#BBDB88",
+    //     }, {
+    //         value: //tag_executive,
+    //         color: "#DB729A",
+    //     }, {
+    //         value: //tag_businessOwner,
+    //         color: "#499EDB",
+    //     }, {
+    //         value: //tag_selfEmployee,
+    //         color: "#DB9672",
+    //     }
+    //     ];
+
+        var data = [{
+            value: 12,
+            color: "#BBDB88",
+        }, {
+            value: 3,
+            color: "#DB729A",
+        }, {
+            value: 5,
+            color: "#499EDB",
+        }, {
+            value: 1,
+            color: "#DB9672",
+        }
+        ];
+
+
+
+        var canvas = document.getElementById("pie_chart");
+        var ctx = canvas.getContext("2d");
+        var midX = canvas.width / 2;
+        var midY = canvas.height / 2
+
+        var ctx = document.getElementById("pie_chart")
+            .getContext("2d");
+
+        function drawSegmentValues() {
+            for (var i = 0; i < myPieChart.segments.length; i++) {
+                ctx.fillStyle = "#000";
+                var textSize = 18;
+                ctx.font = textSize + "px sans-serif";
+                // Get needed variables
+                var value = myPieChart.segments[i].value + "%";
+                var startAngle = myPieChart.segments[i].startAngle;
+                var endAngle = myPieChart.segments[i].endAngle;
+                var middleAngle = startAngle +
+                    ((endAngle - startAngle) / 2);
+
+                // Compute text location
+                var posX = (radius / 1.5) * Math.cos(middleAngle) + midX;
+                var posY = (radius / 1.5) * Math.sin(middleAngle) + midY;
+
+                // Text offside by middle
+                var w_offset = ctx.measureText(value).width / 2;
+                var h_offset = textSize / 4;
+
+                ctx.fillText(value, posX - w_offset, posY + h_offset);
+            }
+        }
+
+        var myPieChart = new Chart(ctx).Pie(data, {
+            showTooltips: false,
+            pointLabelFontSize: 20,
+            animation: false,
+            segmentShowStroke: false
+        });
+
+        var radius = myPieChart.outerRadius;
+
+        drawSegmentValues();
+
+        $(document).ready(function () {
+            var workingOrientationVal = 1;
+
+
+            console.log(data);
+
+            $('#working_orientation_check' + workingOrientationVal).addClass('working-orientation__checked');
+        });
+    </script>
+
+    <script> $(window).on("load", function () {
+            window.status = 'ready_to_print';
+        });
+    </script>
+
+</body>
+
+</html>
