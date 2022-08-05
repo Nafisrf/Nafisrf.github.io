@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9d7f3684.css",
+    "main.js": "/static/js/main.0827eaf8.js",
+    "static/media/najla-true.jpg": "/static/media/najla-true.89cdecf0a6d2a42ebed5.jpg",
+    "static/media/home-bg.jpeg": "/static/media/home-bg.921afab127532b74f65f.jpeg",
+    "index.html": "/index.html",
+    "main.9d7f3684.css.map": "/static/css/main.9d7f3684.css.map",
+    "main.0827eaf8.js.map": "/static/js/main.0827eaf8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9d7f3684.css",
+    "static/js/main.0827eaf8.js"
+  ]
+}
