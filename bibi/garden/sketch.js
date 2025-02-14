@@ -5,6 +5,11 @@ let loveParticles = [];
 function setup() {
   createCanvas(600, 400);
   background(200, 255, 200);
+  createCanvas(windowWidth, windowHeight);
+}
+
+function windowResized() {
+  resizeCanvas(windowWidth, windowHeight);
 }
 
 function draw() {
